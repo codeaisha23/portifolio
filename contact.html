@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    
+.whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    font-weight:bold;
+    font-size:14px;
+    text-decoration:none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.sidebar h3{
+    color:#022827;
+    margin-bottom:12px;
+}
+
+.sidebar p{
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+.sidebar a{
+    display:inline-block;
+    color:#006666;
+    text-decoration:none;
+    margin-bottom:8px;
+}
+
+@media(max-width:900px){
+    .main{
+        flex-direction:column;
+    }
+}
+.end{
+    background:#022827;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Aisha.dev</h2>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Project.html">projects</a></li>
+                <li><a href="Calculator.html">Calculator</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="contact" class="container">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="formMessage"></p>
+</section>
+<div class="sidebar">
+<h3>Let's Connect!</h3>
+<p>You can reach me through email, phone, or social media. I usually respond quickly.</p>
+<p><strong>Email:</strong> wmnaisha@gemail.com</p>
+<p><strong>Phone:</strong> +250 783852061</p>
+<p><strong>Instagram:</strong> <a href="https://Instagram.com/yourusername" target="_blank">Instagram</a></p>
+<p><strong>Tiktok:</strong> <a href="https://Tiktok.com/yourusername" target="_blank">Tiktok.com</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com</a></p>
+<p> Write a short and clear message I'll respond Message faster!</p>
+</div>
+
+</div>
+
+<a href="https://wa.me/250783852061" target="_blank" class="whatsapp">Text me on WhatsApp</a>
+
+<div class="end">
+© 2026 Uwimana Aisha 
+</div>
+
+<script>
+function checkForm(){
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var msg = document.getElementById("message").value;
+
+    if(name == ""){
+        alert("Enter your name!");
+        return false;
+    }
+    if(email == "" || email.indexOf("@") == -1 || email.indexOf(".") == -1){
+        alert("Enter a valid email!");
+        return false;
+    }
+    if(msg.length < 10){
+        alert("Message iz too short!");
+        return false;
+    }
+
+    alert("Message sentooo!");
+    return false;
+}
+</script>
+
+</body>
+</html>

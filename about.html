@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+	.main{
+    max-width:800px;
+    margin:30px auto;
+    padding:10px;
+}
+	h1{
+    text-align:center;
+    color:#022827;
+    margin-bottom:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:15px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:6px;
+    text-align:center;
+}
+
+.card h3{
+    color:#006666;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.5;
+}
+@media(max-width:800px){
+    .cards{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+<body>
+	<header>
+		<nav class="navbar">
+			<h2 class="logo">Aisha.dev</h2>
+			<ul class="nav-links">
+				 <a href="index.html">Home</a>
+				<li><a href="about.html">About</a></li>
+				<li><a href="Skills.html">Skills</a></li>
+				<li><a href="Project.html">projects</a></li>
+				<li><a href="Calculator.html">Calculator</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+				<li><a href="cv.html">CV</a></li>
+			</ul>
+		</nav>
+	</header>
+<section id="about" class="container">
+	<div class="main">
+	<h2>About Me</h2>
+	<div class="card">
+            <h3>Background</h3>
+            <p>
+               passionate computer science student.
+            </p>
+        </div>
+	<div class="card">
+            <h3>Program & Year</h3>
+            <p>
+                Software Development<br>
+                Year Two
+            </p>
+        </div>
+         <div class="card">
+            <h3>Career Goal</h3>
+            <p>
+                To become a professional software developer.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="skills" class="container">
+	<h2>Technical skills</h2>
+	<div class="skill">
+		<p>HTML</p>
+		<div class="progress"> <div style="width: 90%;"></div> </div>
+		</div>
+		<div class="skill">
+			<p>CSS</p>
+		<div class="progress"><div style="width: 90%;"></div></div>
+		</div>
+		<div class="skill">
+			<p>JavaScript</p>
+
+		<div class="progress"><div style="width: 85%;"></div></div>
+	</div>
+</section>
+<footer>
+	<p>copyright (c) 2026 Uwimana Aisha | designer </p>
+</footer>
+<script src="testApp/main.js"></script>
+</body>
+</html>
